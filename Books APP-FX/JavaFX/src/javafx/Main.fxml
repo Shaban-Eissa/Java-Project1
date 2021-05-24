@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.MainController">
+   <children>
+      <VBox layoutX="40.0" layoutY="57.0" prefHeight="241.0" prefWidth="59.0" spacing="31.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Title">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Author">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Year">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Pages">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="99.0" layoutY="57.0" prefHeight="241.0" prefWidth="243.0" spacing="25.0">
+         <children>
+            <TextField fx:id="tfId" />
+            <TextField fx:id="tfTitle" />
+            <TextField fx:id="tfAuthor" />
+            <TextField fx:id="tfYear" />
+            <TextField fx:id="tfPages" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvBooks" layoutX="371.0" layoutY="57.0" onMouseClicked="#handleMouseAction" prefHeight="411.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="77.0" text="ID" />
+          <TableColumn fx:id="colTitle" prefWidth="86.0" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="84.0" text="Author" />
+            <TableColumn fx:id="colYear" prefWidth="84.0" text="Year" />
+            <TableColumn fx:id="colPages" prefWidth="88.0" text="Pages" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="101.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Insert" textFill="WHITE" />
+      <Button fx:id="btnUpdate" layoutX="268.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+      <Button fx:id="btnDelete" layoutX="187.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Delete" textFill="WHITE" />
+      <Button fx:id="btnExit" layoutX="229.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Exit" textFill="WHITE" />
+      <Label layoutX="371.0" layoutY="21.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfSearch" layoutX="423.0" layoutY="18.0" prefHeight="25.0" prefWidth="282.0" />
+      <Button fx:id="btnSearch" layoutX="718.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" text="Search" />
+      <Button fx:id="btnClear" layoutX="142.0" layoutY="442.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Clear" textFill="WHITE" />
+      <Label layoutX="108.0" layoutY="406.0" prefHeight="20.0" prefWidth="243.0" text="Do you want to clear all data in fields ?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

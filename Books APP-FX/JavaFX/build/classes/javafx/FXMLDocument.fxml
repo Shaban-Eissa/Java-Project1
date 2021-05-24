@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLDocumentController">
+   <children>
+      <Label layoutX="503.0" layoutY="90.0" prefHeight="25.0" prefWidth="131.0" text="Sign in" textFill="#b93939">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="422.0" layoutY="199.0" prefHeight="32.0" prefWidth="293.0" promptText="user name" style="-fx-border-radius: 15;" />
+      <PasswordField fx:id="password" layoutX="422.0" layoutY="271.0" prefHeight="32.0" prefWidth="293.0" promptText="password" style="-fx-border-radius: 15;" />
+      <Button fx:id="login" layoutX="523.0" layoutY="355.0" mnemonicParsing="false" onAction="#LOgin" prefHeight="24.0" prefWidth="91.0" style="-fx-background-color: #9e4522;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e4522" height="513.0" layoutX="-2.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="293.0" />
+      <Text fill="WHITE" layoutX="13.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Desktop Application " textAlignment="CENTER" wrappingWidth="263.86328125">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
